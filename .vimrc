@@ -57,3 +57,7 @@ augroup myfiletypes
  autocmd FileType tex set spell spelllang=en
  autocmd FileType tex syntax spell toplevel
 augroup END
+
+" Color column
+set colorcolumn=80
+hi ColorColumn ctermbg=DarkGrey
