@@ -7,7 +7,7 @@ set smarttab
 set shiftwidth=2
 set smartindent
 set noexpandtab
-set textwidth=0
+set textwidth=80
 set modeline
 
 " Load matchit (% to bounce from do to end, etc.)
