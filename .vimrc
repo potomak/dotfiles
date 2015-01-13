@@ -61,3 +61,10 @@ augroup END
 " Color column
 set colorcolumn=80
 hi ColorColumn ctermbg=DarkGrey
+
+" Set solarized color scheme
+set background=dark
+colorscheme solarized
+
+" Enable line numbers
+set number
