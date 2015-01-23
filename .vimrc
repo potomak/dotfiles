@@ -10,6 +10,9 @@ set noexpandtab
 set textwidth=80
 set modeline
 
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
    
