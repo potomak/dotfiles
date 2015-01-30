@@ -6,7 +6,7 @@ filetype plugin indent on " Enable filetype-specific indenting and plugins (andr
 set smarttab
 set shiftwidth=2
 set smartindent
-set noexpandtab
+set expandtab
 set textwidth=80
 set modeline
 
