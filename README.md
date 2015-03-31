@@ -10,13 +10,9 @@ They include minimal configurations for:
 Run:
 
 ```sh
-$ cd
-$ mkdir src
-$ cd src
 $ git clone git@github.com:potomak/dotfiles.git
-$ cd
-$ ln -s ~/dotfiles/.vimrc .vimrc
-$ ln -s ~/dotfiles/.tmux.conf .tmux.conf
+$ cd dotfiles
+$ ./make-links
 ```
 
 ## Credits
