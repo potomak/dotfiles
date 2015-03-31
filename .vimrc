@@ -7,7 +7,7 @@ set smarttab
 set shiftwidth=2
 set smartindent
 set expandtab
-set textwidth=80
+set textwidth=79
 set modeline
 
 " Display extra whitespace
