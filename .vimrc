@@ -15,7 +15,7 @@ set list listchars=tab:»·,trail:·,nbsp:·
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
-   
+
 set title                        " Set a title on the terminal
 set laststatus=2                 " Always display the status line
 set shortmess=atI                " Enable short messages (press a key is annoying)
@@ -59,6 +59,14 @@ augroup myfiletypes
   autocmd FileType java set ai sw=4 sts=4 et
   autocmd FileType tex set spell spelllang=en
   autocmd FileType tex syntax spell toplevel
+
+  autocmd BufRead,BufNewFile *.md set filetype=markdown
+  " Enable spellchecking for Markdown
+  autocmd FileType markdown setlocal spell
+
+  " Automatically wrap at 72 characters and spell check git commit messages
+  autocmd FileType gitcommit setlocal textwidth=72
+  autocmd FileType gitcommit setlocal spell
 augroup END
 
 " Color column
