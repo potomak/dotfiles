@@ -12,7 +12,7 @@ Run:
 ```sh
 $ git clone git@github.com:potomak/dotfiles.git
 $ cd dotfiles
-$ ./make-links
+$ ./setup
 ```
 
 ## Credits
