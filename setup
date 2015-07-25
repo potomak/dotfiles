@@ -2,3 +2,13 @@
 
 ln -s `pwd`/.vimrc ~/.vimrc
 ln -s `pwd`/.tmux.conf ~/.tmux.conf
+
+# create .vim directories
+mkdir -p ~/.vim/colors
+mkdir -p ~/.vim/autoload
+
+# download solarized theme
+wget https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim --output-document=~/.vim/colors/solarized.vim
+
+# download linux kerned dev plugin
+wget https://raw.githubusercontent.com/vim-scripts/linuxsty.vim/master/indent/linuxsty.vim --output-document=~/.vim/autoload/linuxsty.vim
