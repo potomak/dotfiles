@@ -60,6 +60,9 @@ augroup myfiletypes
   autocmd FileType tex set spell spelllang=en
   autocmd FileType tex syntax spell toplevel
 
+  " Elm
+  autocmd BufRead,BufNewFile *.elm set filetype=elm
+
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   " Enable spellchecking for Markdown
   autocmd FileType markdown setlocal spell
