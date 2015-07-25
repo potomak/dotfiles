@@ -49,6 +49,10 @@ set statusline+=Line:%l/%L[%p%%]                " line X of Y [percent of file]
 set statusline+=\ Col:%c                        " current column
 set statusline+=\ Buf:%n                        " Buffer number
 
+" Color column
+set colorcolumn=80
+hi ColorColumn ctermbg=DarkGrey
+
 " Per filetype configuration (andrea@)
 augroup myfiletypes
   " Clear old autocmds in group
@@ -73,11 +77,8 @@ augroup myfiletypes
   " Automatically wrap at 72 characters and spell check git commit messages
   autocmd FileType gitcommit setlocal textwidth=72
   autocmd FileType gitcommit setlocal spell
+  autocmd FileType gitcommit setlocal colorcolumn=73
 augroup END
-
-" Color column
-set colorcolumn=80
-hi ColorColumn ctermbg=DarkGrey
 
 " Set solarized color scheme
 set background=dark
