@@ -63,6 +63,9 @@ augroup myfiletypes
   " Elm
   autocmd BufRead,BufNewFile *.elm set filetype=elm
 
+  " YAML Front Matter workaround, see
+  " http://www.codeography.com/2010/02/20/making-vim-play-nice-with-jekylls-yaml-front-matter.html
+  autocmd BufRead,BufNewFile *.markdown syntax match Comment /\%^---\_.\{-}---$/
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   " Enable spellchecking for Markdown
   autocmd FileType markdown setlocal spell
